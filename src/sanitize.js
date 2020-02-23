@@ -1,6 +1,8 @@
 const {JSDOM} = require('jsdom')
 const createDOMPurify = require('dompurify');
 const window = new JSDOM('').window;
+const {sanitze} = require('../config')
+const conf = sanitze
 
 const DOMPurify = createDOMPurify(window);
 DOMPurify.addHook('beforeSanitizeAttributes', function(node) {
@@ -18,11 +20,6 @@ DOMPurify.addHook('beforeSanitizeAttributes', function(node) {
   }
 })
 
-const conf = {
-  ALLOWED_TAGS: ['h1', 'h2', 'b', 'i', 'em', 'p', 'strong', 'a', 'ul', 'li', '#text'],
-  FORBID_TAGS: ['style'],
-  FORBID_ATTR: ['style']
-}
 
 function sanitize(text) {
   return DOMPurify.sanitize(

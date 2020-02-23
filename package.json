@@ -1,0 +1,27 @@
+{
+  "name": "blog_extractor",
+  "version": "1.0.0",
+  "description": "Extract Content from the blog",
+  "main": "src/index.js",
+  "repository": "git@github.com:asolopovas/blog-extractor.git",
+  "author": "Andrius Solopovas <andrius.solopovas@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "jsdom": "^16.2.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.9.0",
+    "dompurify": "^2.0.8",
+    "knex": "^0.20.10",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "objection": "^2.1.3",
+    "pg": "^7.18.2",
+    "sqlite3": "^4.1.1"
+  }
+}

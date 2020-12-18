@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "date-fns": "^2.9.0",
-    "dompurify": "^2.0.8",
+    "dompurify": "^2.0.17",
     "knex": "^0.20.10",
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
